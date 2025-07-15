@@ -1,17 +1,30 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', serif;
     background-color: #fdfaf7;
-    color: #3b2f2f;
+    color: #6b544c;
     margin: 0;
 }
 
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
     padding: 1.5rem 3rem;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-left .logo {
@@ -24,31 +37,39 @@ body {
 .header-center {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    padding-left: 1rem;
-
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 500px;
+    min-width: 0;
 }
 
 .site-title {
     font-family: 'Jacques Francois', serif;
     font-size: 1.7rem;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     margin: 0;
-    color: #96908f;
-    font-weight: 200;
+    color: #6b544c;
+    font-weight: normal;
     
 }
 
 .searchbar {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    width: 400px;
-    border-radius: 25px;
-    border: 0.5px solid #f6f6f6;
-    font-size: 14px;
-    background-color: #f5f5f5;
-    text-align: left;
+   margin-top: 0.5rem;
+   padding: 0.5rem 1rem;
+   width: 100%;
+   max-width: 400px;
+   border-radius: 25px;
+   border: 0.5px solid #f6f6f6;
+   font-size: 14px;
+   background-color: #f5f5f5;
+   text-align: left;
+}
+
+.searchbar::placeholder {
+    color: #a8a5a5;
+    opacity: 1;
+    font-family: 'Inter', serif;
+    font-size: 13px;
 }
 
 .top-nav {
@@ -60,7 +81,10 @@ body {
     font-size: 0.70rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transform: translateY(20px);
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin-top: 1rem;
+    max-width: 100%;
 }
 
 .top-nav a {
@@ -72,12 +96,6 @@ body {
     color: #ccc;
 }
 
-.searchbar::placeholder {
-    color: #a8a5a5;
-    opacity: 1;
-    font-family: 'Inter', serif;
-    font-size: 13px;
-}
 
 .main-nav {
     display: flex;
@@ -108,4 +126,37 @@ body {
 
 .main-nav span {
     color: #ccc
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+
+.hero-text button {
+    padding: 0.8rem 1.7rem;
+    border: 1px solid #5c5252;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.hero-slider {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
 }
