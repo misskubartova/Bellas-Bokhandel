@@ -57,7 +57,7 @@ body {
     gap: 1.5rem;
     font-weight: 400;
     color: #7d6a6a;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transform: translateY(20px);
@@ -77,4 +77,35 @@ body {
     opacity: 1;
     font-family: 'Inter', serif;
     font-size: 13px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.80rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5c5252;
+    background-color: #fff;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav a:hover {
+    color: #928181;
+}
+
+.main-nav a.active {
+    font-weight: 700;
+}
+
+.main-nav span {
+    color: #ccc
 }
