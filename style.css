@@ -43,7 +43,7 @@ body {
 .searchbar {
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    width: 300px;
+    width: 400px;
     border-radius: 25px;
     border: 0.5px solid #f6f6f6;
     font-size: 14px;
@@ -60,6 +60,7 @@ body {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transform: translateY(20px);
 }
 
 .top-nav a {
@@ -69,4 +70,11 @@ body {
 
 .top-nav span {
     color: #ccc;
+}
+
+.searchbar::placeholder {
+    color: #a8a5a5;
+    opacity: 1;
+    font-family: 'Inter', serif;
+    font-size: 13px;
 }
