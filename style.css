@@ -166,6 +166,7 @@ body {
     font-weight: 500;
     font-size: 13px;
     color: #7d6a6a;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-text button:hover {
@@ -201,7 +202,7 @@ body {
     border-radius: 50%;
     background-color: #ccc;
     opacity: 0.6;
-    transition: opacity 0.3 ease;
+    transition: opacity 0.3s ease;
     position: relative;
 }
 
