@@ -222,3 +222,56 @@ body {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .header-left {
+        order: 1;
+    }
+
+    .header-center {
+        order: 2; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-slider {
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+
+    .hero-slider img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .slider-dots {
+        justify-content: center;
+    }
+
+    .main-nav,
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .header-center {
+        align-items: center;
+    }
+    
+}
